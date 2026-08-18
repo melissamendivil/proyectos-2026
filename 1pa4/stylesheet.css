@@ -1,0 +1,49 @@
+@import url(@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap'););
+@property --color1{
+    sytax: "<color>";
+    inherits: true;
+    initial-value: #172A3A;
+}
+
+@property --color2{
+    sytax: "<color>";
+    inherits: true;
+    initial-value: #D7A84B;}
+    *{
+        margin: 50;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    section{
+        padding: 35px;
+    }
+body{
+    font-family: "Google Sans", sans-serif;
+}
+
+header{
+    background-color: var(--color1);
+    color: var(--color2);
+    border: solid 2px white;
+}
+button{
+    padding: 6px;
+    color: #172A3A;
+    background-color:blanchedalmond;
+    border: none
+
+}
+h1{
+    text-align: center;
+}
+
+a{
+    color: rgb(12, 70, 137)
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+}
+
