@@ -1,0 +1,68 @@
+/* COMBINADOR DESCENDIENTE 
+div p{
+    background-color: lavenderblush;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}*/
+div > p {
+    background-color: rgb(249, 212, 232);
+    padding: 2px;
+
+    border: 1px dashed black;
+}
+
+/* COMBINADOR SIGUIENTE HERMANO */
+div + p{
+    background-color: cornflowerblue;
+    color:cornsilk;
+    font-size: 24px;
+}
+
+div ~ p {
+    background-color: rgb(205, 179, 231);
+    color:blueviolet;
+}
+
+.link:hover {
+    color:mediumorchid;
+}
+.link:link {
+    color:rgb(0, 88, 212);
+}
+.link:focus {
+    font-weight: bold;
+}
+.link:active {
+    color:blue;
+}
+.link:visired {
+    color:darkblue;
+}
+#lorem::first-line {
+    font-weight: bold;
+    background-color: rgb(242, 180, 253);
+    color: rgb(146, 4, 124)
+}
+
+#lorem::first-letter {
+font-weight: bold;
+font-size: 50px;
+}
+
+div::before {
+    content: "AAAAAAAA"
+}
+
+div::after{
+    content:"BBBBBBBB"
+}
+
+::marker {
+    color:cadetblue
+}
+
+::selection {
+    background-color: hotpink;
+    color:lightpink
+}
+
