@@ -1,0 +1,50 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: rgb(207, 237, 255);
+}
+
+#contenedor{
+    border: 2px solid black;
+    background-image: url(imagenes/pista.jpg);
+    width: 800px;
+    height: 800px;
+    overflow: scroll;
+}
+
+section{
+    margin: 40px;
+}
+
+.caja{
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    color:antiquewhite;
+}
+
+.caja1{
+    background-color: lightpink;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top:50px;
+    left:150px;
+}
+
+.caja2{
+    background-color: rgb(147, 0, 108);
+    text-align: right;
+    position: relative;
+    left:150px;
+    bottom: 140px;
+}
+
+.caja3{
+    background-color: palevioletred;
+    font-style: italic;
+    position: relative;
+    bottom:150px;
+    left:140px;
+    
+}
