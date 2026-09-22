@@ -1,233 +1,176 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Tarea 2pa6</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: white;
-    }
-
-    h2 {
-      color: black;
-      margin-top: 30px;
-    }
-
-    hr {
-      margin: 20px 0;
-      border: 0;
-      border-top: 2px solid #ccc;
-    }
-
-    .grid-container {
-      display: grid;
-      gap: 10px;
-    }
-
-    .box {
-      background-color: #4a2d8b;
-      height: 60px;
-    }
-
-    .col-1 {
-      grid-template-columns: 1fr;
-    }
-
-    .col-2 {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .col-3 {
-      grid-template-columns: auto auto auto;
-    }
-
-    .col-4 {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .col-5 {
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    .col-2fr-1fr {
-      grid-template-columns: 2fr 1fr;
-    }
-
-    .col-1fr-2fr {
-      grid-template-columns: 1fr 2fr;
-    }
-  </style>
+    <meta charset="utf-8">
+    <title>2pa6</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-
-  <h1>Ejercicios</h1>
-
-  <h2>1. New screen</h2>
-  <div class="grid-container col-1">
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>2. 1 columna</h2>
-  <div class="grid-container col-1">
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>3. 2 columnas</h2>
-  <div class="grid-container col-2">
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>4. 3 columnas</h2>
-  <div class="grid-container col-3">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>5. 4 columnas</h2>
-  <div class="grid-container col-4">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>6. 2 rows</h2>
-  <div class="grid-container col-1">
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>7. 3 rows</h2>
-  <div class="grid-container col-1">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>8. 4 rows</h2>
-  <div class="grid-container col-1">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>9. 5 rows</h2>
-  <div class="grid-container col-1">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>10. 6 rows</h2>
-  <div class="grid-container col-1">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>11. Large grid</h2>
-  <div class="grid-container col-3">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>12. Small grid</h2>
-  <div class="grid-container col-5">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>13. Mosaic 1</h2>
-  <div class="grid-container col-2">
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>14. Mosaic 2</h2>
-  <div class="grid-container col-2fr-1fr">
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>15. Mosaic 3</h2>
-  <div class="grid-container col-1fr-2fr">
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>16. Mosaic 4</h2>
-  <div class="grid-container col-2">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>17. Mosaic 5</h2>
-  <div class="grid-container col-1fr-2fr">
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>18. Mosaic 6</h2>
-  <div class="grid-container col-2fr-1fr">
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>19. Mosaic 7</h2>
-  <div class="grid-container col-3">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <hr>
-
-  <h2>20. Mosaic 8</h2>
-  <div class="grid-container col-4">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
+    <h1>Ejercicios</h1>
+    <h2>1 column</h2>
+    <div class="one-column">
+        <div></div>
+    </div>
+    <hr>
+    <h2>2 columns</h2>
+    <div class="two-columns">
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>3 columns</h2>
+    <div class="three-columns">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>4 columns</h2>
+    <div class="four-columns">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>2 rows</h2>
+    <div class="two-rows">
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>3 rows</h2>
+    <div class="three-rows">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>4 rows</h2>
+    <div class="four-rows">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>5 rows</h2>
+    <div class="five-rows">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>6 rows</h2>
+    <div class="six-rows">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>Large grid</h2>
+    <div class="large-grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>Small grid</h2>
+    <div class="small-grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>Mosaico 1</h2>
+    <div class="mosaic-1">
+        <div class="m1-big"></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>Mosaico 2</h2>
+    <div class="mosaic-2">
+        <div class="m2-big"></div>
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>Mosaico 3</h2>
+    <div class="mosaic-3">
+        <div class="m3-big"></div>
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>Mosaico 4</h2>
+    <div class="mosaic-4">
+        <div></div>
+        <div></div>
+        <div class="m4-wide"></div>
+        <div class="m4-wide"></div>
+    </div>
+    <hr>
+    <h2>Mosaico 5</h2>
+    <div class="mosaic-5">
+        <div class="m5-big"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>Mosaico 6</h2>
+    <div class="mosaic-6">
+        <div class="m6-big"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>Mosaico 7</h2>
+    <div class="mosaic-7">
+        <div class="m7-big"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <hr>
+    <h2>Mosaico 8</h2>
+    <div class="mosaic-8">
+       <div class="m8-big"></div>        
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </body>
 </html>
