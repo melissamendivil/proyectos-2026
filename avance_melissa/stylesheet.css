@@ -1,0 +1,46 @@
+header{
+    background-image: url(imagenes/bosque.jpg);
+    background-size:cover;
+    background-position:top;
+    height: 50vh;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.body-img{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+}
+
+.main-text{
+    
+}
+
+.img-info{
+    width: 85%;
+    border-radius: 7px;
+}
+
+.p-info{
+    padding: 15px;
+    background-color: blanchedalmond;
+    margin: 0;
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.c-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 992px) {
