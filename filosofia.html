@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Camp Wildfire</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Campamento para niños y niñas">
+    <meta name="keywords" content="Campamento de verano, overnight, Tradicional">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="filosofia.css">
+</head>
+<body>
+    <header id="menu">
+        <video autoplay muted loop id="myVideo">
+            <source src="imagenes/ukelele.mp4" type="video/mp4">
+        </video>
+        <div class="content"></div>
+        <nav class="nav-desk">
+            <a href="index.html" class="logo-link">
+                <img src="imagenes/logo%20blanco.png" alt="Camp Wildfire" class="main-logo">
+            </a>
+            <a href="filosofia.html" class="navbar-item">About Us</a>
+            <a href="Explora el Camp" class="navbar-item">Explore Camp</a>
+            <a href="Trabaja con nosotros" class="navbar-item">Work at Camp</a>
+            <a href="login.html" class="navbar-item">Families</a>
+        </nav>
+        <nav class="nav-mob">
+            <a href="index.html" class="logo-link">
+                <img src="imagenes/logo%20blanco.png" alt="Camp Wildfire" class="mob-logo">
+            </a>
+            <button class="menu-btn"
+                    onclick="toggleMenu()"
+                    aria-label="Abrir menú"
+                    aria-expanded="false">
+                <img src="imagenes/menu.png"
+                     alt=""
+                     class="img-menu">
+            </button>
+            <ul class="mob-menu" id="mobMenu">
+                <li><a href="filosofia.html" onclick="closeMenu()">About Us</a></li>
+                <li><a href="Explora el camp" onclick="closeMenu()">Explore Camp</a></li>
+                <li><a href="Trabaja con nosotros" onclick="closeMenu()">Work at Camp</a></li>
+                <li><a href="login.html" onclick="closeMenu()">Families</a></li>
+            </ul>
+        </nav>
+        <section class="main-text">
+            <h1 class="main-title">ABOUT US</h1>
+            <p>100 Years of Spirit & Tradition</p>
+        </section>
+    </header>
+    <section class="intro" id="Subtitle">
+        <h2>
+            ABOUT
+            <span class="resaltado">OUR HISTORY</span>
+        </h2>
+        <p>
+            Founded in the scenic town of Pembroke, Massachusetts, Camp Wildfire was born out of a desire to keep authentic childhood adventure alive. We believe summer shouldn’t be remembered through a screen, but through the cool lake water on a warm afternoon, the smell of pine in the morning air, and the warmth of an evening campfire.
+            <br><br>
+            Embracing a classic retro-scout tradition, Camp Wildfire is a sanctuary from digital noise. Here, social media gives way to real-life social interactions. Through hands-on workshops, outdoor exploration in Pembroke's natural landscape, and a culture of mentorship, we empower campers to build confidence, master new skills, and forge friendships that last a lifetime.
+            <br><br>
+            One spark is all it takes to light up a summer. Welcome to Camp Wildfire.
+        </p>
+    </section>
+    <div class="galeria-tres-columnas">
+        <div class="item-imagen">
+            <img src="imagenes/grupo2.jpg" alt="Imagen de grupo en el campamento">
+        </div>
+        <div class="item-imagen">
+            <img src="imagenes/libro.jpg" alt="Imagen de libro o actividades">
+        </div>
+        <div class="item-imagen">
+            <img src="imagenes/espaldas.jpg" alt="Imagen de actividades al aire libre">
+        </div>
+    </div>
+
+    <div class="pequeno-apartado">
+        <h3>"Getting kids away from screens and into real adventures is priceless."</h3>
+        <p>— Liam M.</p>
+    </div>
+    <section class="wrapped-info" id="filosofia">
+        <img src="/Users/melissamendivilvillarreal/Desktop/camp wildfire/imagenes/lupa.jpg" alt="Campistas en el campamento" class="img-info">
+        <div class="c-info">
+            <h3>OUR <span class="resaltado">PHILOSOPHY</span></h3>
+            <p class="p-info">
+                At Camp Wildfire, we believe that the most meaningful growth happens outside the comfort zone and far away from glowing screens. Our philosophy is rooted in the timeless traditions of classic scout camps: learning by doing, respecting the great outdoors, and fostering genuine human connection.
+            </p>
+        </div>
+    </section>
+    <section class="wrapped-info wrapped-reverse" id="ubicacion">
+        <img src="/Users/melissamendivilvillarreal/Desktop/camp wildfire/imagenes/grupo.jpg" alt="Campistas en el campamento" class="img-info">
+        <div class="c-info">
+            <h3>OUR <span class="resaltado">LOCATION</span></h3>
+            <p class="p-info">
+                At Camp Wildfire, we believe that the most meaningful growth happens outside the comfort zone and far away from glowing screens. Our philosophy is rooted in the timeless traditions of classic scout camps: learning by doing, respecting the great outdoors, and fostering genuine human connection.
+            </p>
+        </div>
+    </section>
+    <footer id="contacto">
+        <div class="footer-info">
+            <div>
+                <h4>Camp Wildfire</h4>
+                <p>The Best Summers Starts Here</p>
+            </div>
+            <div>
+                <h4>Address</h4>
+                <address>
+                    306 Oldham St<br>
+                    Pembroke, MA 02359<br>
+                    United States
+                </address>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>
+                    <a href="mailto:CampWildfire@gmail.com">
+                        CampWildfire@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobMenu");
+            const button = document.querySelector(".menu-btn");
+            menu.classList.toggle("active");
+            const isOpen = menu.classList.contains("active");
+            button.setAttribute("aria-expanded", isOpen);
+        }
+
+        function closeMenu() {
+            const menu = document.getElementById("mobMenu");
+            const button = document.querySelector(".menu-btn");
+            menu.classList.remove("active");
+            button.setAttribute("aria-expanded", "false");
+        }
+    </script>
+</body>
+</html>
