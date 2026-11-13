@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Camp Wildfire</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Campamento para niños y niñas">
+    <meta name="keywords" content="Campamento de verano, overnight, Tradicional">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header id="menú">
+                <video autoplay muted loop id="myVideo">
+        <source src="imagenes/Adobe Express - ukelele.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+        </div>
+        <nav class="nav-desk">
+            <img src="imagenes/logo blanco.png"
+                 alt="Camp Wildfire"
+                 class="main-logo">
+            <a href="filosofia.html" class="navbar-item">About Us</a>
+            <a href="Explora el Camp" class="navbar-item">Explore Camp</a>
+            <a href="Trabaja con nosotros" class="navbar-item">Work at Camp</a>
+            <a href="login.html" class="navbar-item">Families</a>
+        </nav>
+        <nav class="nav-mob">
+            <button class="menu-btn"
+                    onclick="toggleMenu()"
+                    aria-label="Abrir menú"
+                    aria-expanded="false">
+                <img src="imagenes/menu.png"
+                     alt=""
+                     class="img-menu">
+            </button>
+            <ul class="mob-menu" id="mobMenu">
+                <li><a href="filosofia.html" onclick="closeMenu()">About Us</a></li>
+                <li><a href="Explora el camp" onclick="closeMenu()">Explore Camp</a></li>
+                <li><a href="Trabaja con nosotros" onclick="closeMenu()">Work at Camp</a></li>
+                <li><a href="login.html" onclick="closeMenu()">Families</a></li>
+            </ul>
+        </nav>
+        <section class="main-text">
+            <img src="imagenes/logo-main.png">
+            <p>WHERE LIFELONG FRIENDSHIPS SPARK LIFE-CHANGING MEMORIES</p>
+        </section>
+    </header>
+    <section class="cta" id="registro">
+        <p>Wildfire Family!</p>
+        <div class="cta-buttons">
+            <a href="#" class="button">Sign In</a>
+            <a href="#" class="button">Log In</a>
+        </div>
+    </section>
+    <section class="intro" id="Subtitle">
+
+        <h2>
+            THERE ARE MANY SUMMER CAMPS, BUT
+            <span class="resaltado">THERE’S ONLY ONE CAMP WILDFIRE</span>
+        </h2>
+        <p>
+            Located on beautiful Lake Tispaquin in Middleboro, MA, one hour south of Boston, Wilfire boasts the ideal summer camp setting. Our cabins encircle our flat, well-manicured athletic field. A picture-perfect lake beckons behind the tall pine trees.
+            The intimate layout means kids can traverse camp in minutes, allowing your son to get the lay of the land immediately. With only 150 campers, Avoda feels different from other camps. The oldest campers mentor the youngest campers, and everyone knows each other by name.
+        </p>
+    </section>
+    <section class="wrapped-info">
+        <img src="imagenes/fogata.jpg"
+             alt="Campistas en un taller de manualidades"
+             class="img-info">
+        <div class="c-info">
+            <h3>Come As You Are, <span class="resaltado">Grow into your best self</span></h3>
+            <p class="p-info">
+                Every camper comes to Wildfire at a different stage in his personal, emotional, and physical development. Your son will try new things, master new skills, and grow as a person — gaining confidence and building character.
+            </p>
+        </div>
+    </section>
+    <section class="wrapped-info wrapped-reverse">
+        <img src="imagenes/main page.jpg"
+             alt="Campistas en una caminata al aire libre"
+             class="img-info">
+        <div class="c-info">
+            <h3>TIME <span class="resaltado">UNPLUGGED</span></h3>
+            <p class="p-info">
+            At Wildfire, social media gives way to social interactions and meaningful connections. Texting, Snapchat, and TikTok are replaced by real-life activities that you can’t find anywhere else. Our environment encourages more traditional fun and making relationships in real life.
+            </p>
+        </div>
+    </section>
+    <footer id="contacto">
+        <div class="footer-info">
+            <div>
+                <h4>Camp Wildfire</h4>
+                <p>The Best Summers Starts Here</p>
+            </div>
+            <div>
+                <h4>Address</h4>
+                <address>
+                    306 Oldham St<br>
+                    Pembroke, MA 02359<br>
+                    United States
+                </address>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>
+                    <a href="mailto:CampWildfire@gmail.com">
+                        CampWildfire@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        function toggleMenu() {
+
+            const menu = document.getElementById("mobMenu");
+            const button = document.querySelector(".menu-btn");
+
+            menu.classList.toggle("active");
+
+            const isOpen = menu.classList.contains("active");
+
+            button.setAttribute("aria-expanded", isOpen);
+
+        }
+
+
+        function closeMenu() {
+
+            const menu = document.getElementById("mobMenu");
+            const button = document.querySelector(".menu-btn");
+
+            menu.classList.remove("active");
+
+            button.setAttribute("aria-expanded", "false");
+
+        }
+
+    </script>
+
+</body>
+</html>
