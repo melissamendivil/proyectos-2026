@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Camp Wildfire - Work at Camp</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Campamento para niños y niñas">
+    <meta name="keywords" content="Campamento de verano, overnight, Tradicional">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+    <header id="menu">
+        <video autoplay muted loop id="myVideo">
+            <source src="imagenes/Adobe Express - ukelele.mp4" type="video/mp4">
+        </video>
+        <div class="content"></div>
+        <nav class="nav-desk">
+            <a href="index.html" class="logo-link">
+                <img src="imagenes/logo%20blanco.png" alt="Camp Wildfire" class="main-logo">
+            </a>
+            <a href="filosofia.html" class="navbar-item">About Us</a>
+            <a href="explore.html" class="navbar-item">Explore Camp</a>
+            <a href="work.html" class="navbar-item">Work at Camp</a>
+            <a href="login.html" class="navbar-item">Families</a>
+        </nav>
+        <nav class="nav-mob">
+            <a href="index.html" class="logo-link">
+                <img src="imagenes/logo%20blanco.png" alt="Camp Wildfire" class="mob-logo">
+            </a>
+            <button class="menu-btn"
+                    onclick="toggleMenu()"
+                    aria-label="Abrir menú"
+                    aria-expanded="false">
+                <img src="imagenes/menu.png"
+                     class="img-menu">
+            </button>
+            <ul class="mob-menu" id="mobMenu">
+                <li><a href="filosofia.html" onclick="closeMenu()">About Us</a></li>
+                <li><a href="explore.html" onclick="closeMenu()">Explore Camp</a></li>
+                <li><a href="work.html" onclick="closeMenu()">Work at Camp</a></li>
+                <li><a href="login.html" onclick="closeMenu()">Families</a></li>
+            </ul>
+        </nav>
+        <section class="main-text">
+            <h1 class="main-title">WORK AT CAMP</h1>
+            <p>Be Part of Our Team</p>
+        </section>
+    </header>
+    <section class="intro" id="Subtitle">
+        <h2>
+            WILDFIRE
+            <span class="resaltado">CREW</span>
+        </h2>
+        <p>
+            Behind every campfire song, lake adventure, and cabin laugh at Camp Wildfire is a dedicated team that makes summer possible. Our staff brings together counselors, activity specialists, kitchen and dining crew, and facilities and cleaning teams who care deeply about creating a safe, welcoming, and screen-free environment. Whether guiding campers through their first time on the water, keeping cabins and shared spaces tidy, or preparing hearty meals after a full day outdoors, every role matters. 
+            <br><br>
+            Together, our team models kindness, responsibility, and teamwork so campers can step out of their comfort zone, build real friendships, and feel right at home from day one.
+        </p>
+    </section>
+        <section class="fila-locacion">
+        <div class="info-locacion">
+            <div class="barra-subtitulo">
+                <h2>MENTORS <span class="resaltado">& COUNSELORS</span></h2>
+            </div>
+            <p>
+                Cabin counselors live alongside campers, guide daily routines, and help turn everyday moments from cabin clean-up to late-night laughs into lasting confidence.
+            </p>
+        </div>
+        <img src="imagenes/counselor.jpg" alt="Camp counselors" class="img-vertical">
+    </section>
+    <section class="fila-locacion fila-invertida">
+        <div class="info-locacion">
+            <div class="barra-subtitulo">
+                <h2>ACTIVITY <span class="resaltado">LEADERS</span></h2>
+            </div>
+            <p>
+                From waterfront safety and archery to arts, crafts, and trail hikes, our specialists teach practical skills while keeping things fun, encouraging, and hands-on.
+            </p>
+        </div>
+        <img src="imagenes/activityleader.jpg" alt="Activity leaders" class="img-vertical">
+    </section>
+    <section class="fila-locacion">
+        <div class="info-locacion">
+            <div class="barra-subtitulo">
+                <h2>KITCHEN, DINING <span class="resaltado">& CAMP CARE</span></h2>
+            </div>
+            <p>
+                Our kitchen and cleaning crew keeps camp running smoothly with hearty meals and clean, safe cabins and shared spaces every day.
+            </p>
+        </div>
+        <img src="imagenes/staff.jpg" alt="Staff camp" class="img-vertical">
+    </section>
+    <section class="intro" id="faq">
+        <h2>
+            FREQUENTLY ASKED
+            <span class="resaltado">QUESTIONS</span>
+        </h2>
+        <p>
+            Got questions about joining the Camp Wildfire team? Here are the essentials before you apply.
+        </p>
+    </section>
+    <section class="cards-container">
+        <div class="card-info">
+            <div class="text-card">
+                <h2><strong>What are the minimum requirements?</strong></h2>
+                <p>Applicants must be at least 18 years old, pass a background check, and be available for the full summer session including staff training week.</p>
+            </div>
+        </div>
+
+        <div class="card-info">
+            <div class="text-card">
+                <h2><strong>Are room and meals included?</strong></h2>
+                <p>Yes! All summer staff members receive cabin housing, three daily meals in the dining hall, and scheduled days off during the session.</p>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="text-card">
+                <h2><strong>Do I need prior camp experience?</strong></h2>
+                <p>Not at all. While experience working with kids is a plus, we provide full hands-on training in safety, leadership, and activity instruction.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="contacto">
+        <div class="footer-info">
+            <div>
+                <h4>Camp Wildfire</h4>
+                <p>The Best Summers Starts Here</p>
+            </div>
+            <div>
+                <h4>Address</h4>
+                <address>
+                    306 Oldham St<br>
+                    Pembroke, MA 02359<br>
+                    United States
+                </address>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>
+                    <a href="mailto:CampWildfire@gmail.com">
+                        CampWildfire@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobMenu");
+            const button = document.querySelector(".menu-btn");
+            menu.classList.toggle("active");
+            const isOpen = menu.classList.contains("active");
+            button.setAttribute("aria-expanded", isOpen);
+        }
+
+        function closeMenu() {
+            const menu = document.getElementById("mobMenu");
+            const button = document.querySelector(".menu-btn");
+            menu.classList.remove("active");
+            button.setAttribute("aria-expanded", "false");
+        }
+    </script>
+</body>
+</html>
